@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    main color-->
+    <color name="north_star_blue">#2D47FE</color>
+    <color name="flamingo_red">#E75555</color>
+    <color name="shade_green">#2AB514</color>
+    <color name="dark_charcoal">#333333</color>
+    <color name="surf_purple">#9698A9</color>
+    <color name="light_grey">#B3B3B3</color>
+
+</resources>

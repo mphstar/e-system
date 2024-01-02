@@ -10,5 +10,6 @@
     <color name="dark_charcoal">#333333</color>
     <color name="surf_purple">#9698A9</color>
     <color name="light_grey">#B3B3B3</color>
+    <color name="transparent">#00FFFFFF</color>
 
 </resources>

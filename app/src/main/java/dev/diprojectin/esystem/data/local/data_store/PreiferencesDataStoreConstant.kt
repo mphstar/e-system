@@ -7,4 +7,5 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 
 object PreiferencesDataStoreConstant {
     val IS_ONBOARDING = booleanPreferencesKey("IS_ONBOARDING")
+    val IS_LOGGED_IN = booleanPreferencesKey("IS_LOGGED_IN")
 }

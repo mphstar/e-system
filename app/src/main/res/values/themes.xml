@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Esystem" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Esystem" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
@@ -69,6 +69,18 @@
         <item name="android:textSize">8sp</item>
         <item name="android:textColor">@color/north_star_blue</item>
         <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="BottomNavigationText">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BottomNavigationText.Selected">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
 </resources>

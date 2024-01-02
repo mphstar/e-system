@@ -8,8 +8,10 @@ import android.os.Handler
 import android.os.Looper
 import androidx.lifecycle.lifecycleScope
 import dev.diprojectin.esystem.data.local.data_store.PreferencesDataStoreHelper
+import dev.diprojectin.esystem.data.local.data_store.PreiferencesDataStoreConstant.IS_LOGGED_IN
 import dev.diprojectin.esystem.data.local.data_store.PreiferencesDataStoreConstant.IS_ONBOARDING
 import dev.diprojectin.esystem.databinding.ActivitySplashScreenBinding
+import dev.diprojectin.esystem.ui.main_pages.MainActivity
 import dev.diprojectin.esystem.ui.onboarding_page.OnboardingActivity
 import dev.diprojectin.esystem.ui.sign_in.SignInActivity
 import kotlinx.coroutines.flow.collect
@@ -30,8 +32,15 @@ class SplashScreenActivity : AppCompatActivity() {
             lifecycleScope.launch {
                 preferencesDataStoreHelper.getPreference(IS_ONBOARDING,false).collect { isOnboarding ->
                     if (isOnboarding){
-                        startActivity(Intent(this@SplashScreenActivity,SignInActivity::class.java))
-                        finish()
+                        preferencesDataStoreHelper.getPreference(IS_LOGGED_IN, false).collect { isLoggedIn ->
+                            if (isLoggedIn){
+                                startActivity(Intent(this@SplashScreenActivity,MainActivity::class.java))
+                                finish()
+                            }else{
+                                startActivity(Intent(this@SplashScreenActivity,SignInActivity::class.java))
+                                finish()
+                            }
+                        }
                     }else{
                         startActivity(Intent(this@SplashScreenActivity,OnboardingActivity::class.java))
                         finish()

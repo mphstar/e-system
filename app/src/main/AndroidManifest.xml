@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Esystem"
         tools:targetApi="31">
         <activity
+            android:name=".ui.absensi_page.sign_in_absensi_page.SignInAbsensiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.absensi_page.employee_absensi_page.EmployeeAbsensiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.absensi_page.AbsensiActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.main_pages.MainActivity"
             android:exported="false" />
         <activity
@@ -34,6 +43,12 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

@@ -53,20 +53,38 @@
         <item name="fontFamily">@font/poppins_light</item>
     </style>
 
+    <style name="TextPoppinsLight16sp">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#B5FFFFFF</item>
+        <item name="fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="TextPoppinsLight12spWhite">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="TextPoppinsLight12spBlue">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/north_star_blue</item>
+        <item name="fontFamily">@font/poppins_light</item>
+    </style>
+
     <style name="TextPoppinsregular12sp">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/white</item>
         <item name="fontFamily">@font/poppins</item>
     </style>
 
-    <style name="TextPoppinsMedium15sp6072EE">
-        <item name="android:textSize">15sp</item>
-        <item name="android:textColor">@color/north_star_blue</item>
-        <item name="fontFamily">@font/poppins_medium</item>
+    <style name="TextPoppinsBold24sp">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/poppins_bold</item>
     </style>
 
-    <style name="TextBottomNav">
-        <item name="android:textSize">8sp</item>
+    <style name="TextPoppinsMedium15sp6072EE">
+        <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/north_star_blue</item>
         <item name="fontFamily">@font/poppins_medium</item>
     </style>

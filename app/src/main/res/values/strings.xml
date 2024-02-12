@@ -1,13 +1,10 @@
 <resources>
     <string name="app_name">esystem</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="smart_system_noffice_with_e_system">Smart System\nOffice With E-System</string>
     <string name="management_your_noffice_with_e_system">Management Your\nOffice With E-System</string>
     <string name="join_us_with">Join Us With</string>
     <string name="e_system_apps">E- System Apps</string>
-    <string name="full_name">Full Name</string>
-    <string name="hint_your_full_name">Your Full Name</string>
     <string name="password">Password</string>
     <string name="division">Division</string>
     <string name="sign_in">Sign In</string>
@@ -18,4 +15,14 @@
     <string name="sign_in_with_google">Sign In With Google</string>
     <string name="username">Username</string>
     <string name="your_username">Your Username</string>
+    <string name="dummy_title_home">Howdy,\nNdaru Samboja</string>
+    <string name="dummy_title_date">xx-xx-xxxx</string>
+    <string name="dummy_title_date2">xx/xxx/xxxx</string>
+    <string name="title_dummy_youtube">Time For\nBreak</string>
+    <string name="dummy_title_play_video">Play Video Here</string>
+    <string name="title_employee_absensi">Employee Absensi</string>
+    <string name="title_employee_permission">Employee Permission</string>
+    <string name="title_user_sign_in">User Sign In</string>
+
+    <string name="google_maps_api_key" translatable="false">AIzaSyCU4U6KekqYDUBjQf6V2Mmj63FryP-Yog4</string>
 </resources>

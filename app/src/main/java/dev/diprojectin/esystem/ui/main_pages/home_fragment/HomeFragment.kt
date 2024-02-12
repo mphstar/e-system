@@ -1,5 +1,6 @@
 package dev.diprojectin.esystem.ui.main_pages.home_fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import dev.diprojectin.esystem.R
 import dev.diprojectin.esystem.databinding.FragmentHomeBinding
+import dev.diprojectin.esystem.ui.absensi_page.AbsensiActivity
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
@@ -16,5 +18,13 @@ class HomeFragment : Fragment() {
     ): View? {
         binding = FragmentHomeBinding.inflate(layoutInflater,container,false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.cvAbsensi.setOnClickListener {
+            startActivity(Intent(requireActivity(), AbsensiActivity::class.java))
+        }
     }
 }

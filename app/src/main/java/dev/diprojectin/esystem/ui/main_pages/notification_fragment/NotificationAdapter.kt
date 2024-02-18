@@ -2,6 +2,7 @@ package dev.diprojectin.esystem.ui.main_pages.notification_fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.FrameLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import dev.diprojectin.esystem.R
@@ -14,6 +15,7 @@ class NotificationAdapter(private val notificationList: List<NotificationModel>)
         val file: TextView = itemView.findViewById(R.id.file_notification)
         val date: TextView = itemView.findViewById(R.id.date_notification)
         val time: TextView = itemView.findViewById(R.id.time_notification)
+        val garis_bawah_notification: FrameLayout = itemView.findViewById(R.id.garis_bawah_notification)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NotificationViewHolder {
@@ -27,6 +29,10 @@ class NotificationAdapter(private val notificationList: List<NotificationModel>)
         holder.file.text = notification.file
         holder.date.text = notification.date
         holder.time.text = notification.time
+
+        if(position == notificationList.size - 1){
+            holder.garis_bawah_notification.visibility = View.GONE
+        }
     }
 
     override fun getItemCount(): Int {

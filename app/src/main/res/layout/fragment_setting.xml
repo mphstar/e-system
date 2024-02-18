@@ -1,14 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.main_pages.setting_fragment.SettingFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="setting" />
+        android:paddingHorizontal="32dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="32dp"
+            android:text="Settings"
+            android:fontFamily="@font/poppins_semibold"
+            android:textAlignment="center"
+            android:textColor="#2D47FE"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:paddingVertical="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Notifications"
+                android:fontFamily="@font/poppins"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@drawable/background_radio"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="4dp">
+
+                <RadioButton
+                    android:id="@+id/radio_notification_on"
+                    android:layout_width="38dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="On"
+                    android:textColor="@color/radio_text_color"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_notification_off"
+                    android:layout_width="38dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="Off"
+                    android:textColor="@color/radio_text_color"
+                    android:textStyle="bold" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingVertical="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Night Mode"
+                android:fontFamily="@font/poppins"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@drawable/background_radio"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="4dp">
+
+                <RadioButton
+                    android:id="@+id/radio_nightmode_on"
+                    android:layout_width="38dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="On"
+                    android:textColor="@color/radio_text_color"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_nightmode_off"
+                    android:layout_width="38dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="Off"
+                    android:textColor="@color/radio_text_color"
+                    android:textStyle="bold" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingVertical="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Language"
+                android:fontFamily="@font/poppins"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@drawable/background_radio"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="4dp">
+
+                <RadioButton
+                    android:id="@+id/radio_language_en"
+                    android:layout_width="38dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="En"
+                    android:textColor="@color/radio_text_color"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_language_idn"
+                    android:layout_width="38dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="Idn"
+                    android:textColor="@color/radio_text_color"
+                    android:textStyle="bold" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/red_maroon"
+            android:contextClickable="true"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:text="Log Out Account" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

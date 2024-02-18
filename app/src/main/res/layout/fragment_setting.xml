@@ -169,7 +169,7 @@
                     android:text="En"
                     android:textColor="@color/radio_text_color"
                     android:textStyle="bold" />
-
+git
                 <RadioButton
                     android:id="@+id/radio_language_idn"
                     android:layout_width="38dp"

@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.main_pages.notification_fragment.NotificationFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="notifikasi" />
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2D47FE"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingVertical="32dp"
+            android:text="Notification" />
 
-</FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:paddingHorizontal="24dp"
+            android:layout_height="match_parent"
+            android:id="@+id/notification_list" />
+
+    </LinearLayout>
+
+</RelativeLayout>

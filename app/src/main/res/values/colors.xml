@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    main color-->
+    <color name="north_star_blue">#2D47FE</color>
+    <color name="flamingo_red">#E75555</color>
+    <color name="surf_purple">#9698A9</color>
+    <color name="youtube_red">#E75555</color>
+    <color name="broken_white">#F3F3F3</color>
+    <color name="red_maroon">#DD5C5C</color>
+    <color name="green_light">#5FBE69</color>
+</resources>

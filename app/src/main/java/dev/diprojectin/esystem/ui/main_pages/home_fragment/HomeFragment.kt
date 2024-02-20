@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import dev.diprojectin.esystem.R
 import dev.diprojectin.esystem.databinding.FragmentHomeBinding
 import dev.diprojectin.esystem.ui.absensi_page.AbsensiActivity
+import dev.diprojectin.esystem.ui.approval_page.ApprovalActivity
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
@@ -25,6 +26,10 @@ class HomeFragment : Fragment() {
 
         binding.cvAbsensi.setOnClickListener {
             startActivity(Intent(requireActivity(), AbsensiActivity::class.java))
+        }
+
+        binding.cvApproval.setOnClickListener {
+            startActivity(Intent(requireActivity(), ApprovalActivity::class.java))
         }
     }
 }

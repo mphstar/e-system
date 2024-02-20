@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Esystem"
         tools:targetApi="31">
         <activity
+            android:name=".ui.approval_page.ApprovalActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.absensi_page.sign_in_absensi_page.SignInAbsensiActivity"
             android:exported="false" />
         <activity

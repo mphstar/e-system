@@ -1,10 +1,13 @@
 package dev.diprojectin.esystem.ui.approval_page
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import dev.diprojectin.esystem.R
 import dev.diprojectin.esystem.databinding.ActivityApprovalBinding
+import dev.diprojectin.esystem.ui.absensi_page.employee_absensi_page.EmployeeAbsensiActivity
+import dev.diprojectin.esystem.ui.approval_page.ceo.ApprovalCeoActivity
 
 
 class ApprovalActivity : AppCompatActivity() {
@@ -22,6 +25,10 @@ class ApprovalActivity : AppCompatActivity() {
 
         binding.header.back.setOnClickListener {
             finish()
+        }
+
+        binding.ceoMenu.setOnClickListener {
+            startActivity(Intent(this@ApprovalActivity, ApprovalCeoActivity::class.java))
         }
 
 

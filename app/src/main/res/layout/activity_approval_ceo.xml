@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="24dp"
+    android:layout_height="match_parent"
+    tools:context=".ui.approval_page.ceo.ApprovalCeoActivity">
+    <include layout="@layout/header_back" android:id="@+id/header" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/header"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingVertical="8dp"
+                android:paddingLeft="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_height="wrap_content"
+                android:text="Email Address" />
+            <EditText
+                android:layout_width="match_parent"
+                android:paddingVertical="16dp"
+                android:paddingHorizontal="16dp"
+                android:hint="Email"
+                android:background="@drawable/bg_edit_text_stroke_dark_fill_transparent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingVertical="8dp"
+                android:paddingLeft="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_height="wrap_content"
+                android:text="Division" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:foregroundGravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:paddingHorizontal="12dp"
+                    android:tint="#616161"
+                    android:src="@drawable/ic_dropdown" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="18dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="8dp"
+                    android:entries="@array/divisions"
+                    android:background="@drawable/bg_edit_text_stroke_dark_fill_transparent" />
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:text="Next"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            app:cornerRadius="12dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins"
+            android:paddingHorizontal="60dp"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/white"
+            android:textColor="@color/north_star_blue"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/north_star_blue"
+            android:paddingVertical="12dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

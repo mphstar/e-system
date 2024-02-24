@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="divisions">
+        <item>Management</item>
+        <item>HR</item>
+        <item>Development</item>
+        <item>Operational</item>
+        <item>Finance</item>
+        <!-- Add more countries as needed -->
+    </string-array>
+</resources>

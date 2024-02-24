@@ -24,6 +24,7 @@
             android:textSize="24sp"
             android:textColor="#2D47FE"
             android:fontFamily="@font/poppins_semibold"
+            android:text="First title"
             android:id="@+id/first_title"
             />
         <TextView
@@ -31,6 +32,7 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:textColor="#2D47FE"
+            android:text="Second title"
             android:fontFamily="@font/poppins_semibold"
             android:id="@+id/second_title"
             />

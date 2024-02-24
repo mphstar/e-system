@@ -31,6 +31,7 @@
             android:text="Staff Division"
             android:textSize="12sp"
             app:cornerRadius="12dp"
+            android:id="@+id/staff_menu"
             android:fontFamily="@font/poppins"
             android:textAllCaps="false"
             app:backgroundTint="@color/white"

@@ -8,6 +8,7 @@ import dev.diprojectin.esystem.R
 import dev.diprojectin.esystem.databinding.ActivityApprovalBinding
 import dev.diprojectin.esystem.ui.absensi_page.employee_absensi_page.EmployeeAbsensiActivity
 import dev.diprojectin.esystem.ui.approval_page.ceo.ApprovalCeoActivity
+import dev.diprojectin.esystem.ui.approval_page.staff.ApprovalStaffActivity
 
 
 class ApprovalActivity : AppCompatActivity() {
@@ -29,6 +30,10 @@ class ApprovalActivity : AppCompatActivity() {
 
         binding.ceoMenu.setOnClickListener {
             startActivity(Intent(this@ApprovalActivity, ApprovalCeoActivity::class.java))
+        }
+
+        binding.staffMenu.setOnClickListener {
+            startActivity(Intent(this@ApprovalActivity, ApprovalStaffActivity::class.java))
         }
 
 
